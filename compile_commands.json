@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/pijon/Documents/dev/netrom_stl/build/linux-debug",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -I/home/pijon/Documents/dev/netrom_stl/include -g -std=gnu++20 -o CMakeFiles/my_executable.dir/main.cpp.o -c /home/pijon/Documents/dev/netrom_stl/main.cpp",
+  "file": "/home/pijon/Documents/dev/netrom_stl/main.cpp"
+},
+{
+  "directory": "/home/pijon/Documents/dev/netrom_stl/build/linux-debug",
+  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -I/home/pijon/Documents/dev/netrom_stl/include -g -std=gnu++20 -o CMakeFiles/my_executable.dir/src/Stl.cpp.o -c /home/pijon/Documents/dev/netrom_stl/src/Stl.cpp",
+  "file": "/home/pijon/Documents/dev/netrom_stl/src/Stl.cpp"
+}
+]
