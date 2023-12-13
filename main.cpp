@@ -11,21 +11,24 @@
 namespace po = boost::program_options;
 
 int main(int argc, const char *argv[]) {
+  const std::string k_input = "input_file";
+  const std::string k_output = "output_file";
+
   try {
     po::options_description desc{"Options"};
     desc.add_options()("help,h", "Help screen")(
-        "output,o", po::value<std::string>(), "Output file");
+        k_output + ",o", po::value<std::string>(), "Output file");
 
     po::positional_options_description pos_desc;
-    pos_desc.add("input", 1);
+    pos_desc.add(k_input.c_str(), -1);
 
     po::command_line_parser parser{argc, argv};
     parser.options(desc).positional(pos_desc);
     po::parsed_options parsed_options = parser.run();
 
     po::variables_map vm;
-    store(parsed_options, vm);
-    notify(vm);
+    po::store(parsed_options, vm);
+    po::notify(vm);
 
     if (vm.count("help")) {
       std::cout << "Usage: " << argv[0] << " [OPTION]... [FILE]\n\n";
@@ -33,9 +36,10 @@ int main(int argc, const char *argv[]) {
       return 0;
     }
 
-    std::ifstream in(vm.count("input") ? vm["input"].as<std::string>() : "");
+    std::ifstream in(
+        vm.count(k_input) ? vm[k_input].as<std::vector<std::string>>()[0] : "");
 
-    std::ofstream out(vm.count("output") ? vm["output"].as<std::string>() : "");
+    std::ofstream out(vm.count(k_output) ? vm[k_output].as<std::string>() : "");
 
     Stl::task(in.is_open() ? in : std::cin, out.is_open() ? out : std::cout);
   } catch (const po::error &ex) {

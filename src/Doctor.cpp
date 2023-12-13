@@ -1,4 +1,1 @@
-#include "/Doctor.hpp"
-
-using namespace ;
-
+#include "Doctor.hpp"

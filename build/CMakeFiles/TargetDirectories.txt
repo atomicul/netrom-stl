@@ -1,3 +1,0 @@
-/home/pijon/Documents/dev/netrom_stl/build/CMakeFiles/my_executable.dir
-/home/pijon/Documents/dev/netrom_stl/build/CMakeFiles/edit_cache.dir
-/home/pijon/Documents/dev/netrom_stl/build/CMakeFiles/rebuild_cache.dir

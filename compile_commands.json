@@ -1,12 +1,26 @@
 [
 {
-  "directory": "/home/pijon/Documents/dev/netrom_stl/build/linux-debug",
-  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -I/home/pijon/Documents/dev/netrom_stl/include -g -std=gnu++20 -o CMakeFiles/my_executable.dir/main.cpp.o -c /home/pijon/Documents/dev/netrom_stl/main.cpp",
-  "file": "/home/pijon/Documents/dev/netrom_stl/main.cpp"
+  "directory": "/Users/pijon/Documents/dev/netrom-stl/build/osx-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -I/Users/pijon/Documents/dev/netrom-stl/include -isystem /opt/homebrew/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -o CMakeFiles/my_executable.dir/main.cpp.o -c /Users/pijon/Documents/dev/netrom-stl/main.cpp",
+  "file": "/Users/pijon/Documents/dev/netrom-stl/main.cpp",
+  "output": "CMakeFiles/my_executable.dir/main.cpp.o"
 },
 {
-  "directory": "/home/pijon/Documents/dev/netrom_stl/build/linux-debug",
-  "command": "/usr/bin/c++ -DBOOST_ALL_NO_LIB -DBOOST_PROGRAM_OPTIONS_DYN_LINK -I/home/pijon/Documents/dev/netrom_stl/include -g -std=gnu++20 -o CMakeFiles/my_executable.dir/src/Stl.cpp.o -c /home/pijon/Documents/dev/netrom_stl/src/Stl.cpp",
-  "file": "/home/pijon/Documents/dev/netrom_stl/src/Stl.cpp"
+  "directory": "/Users/pijon/Documents/dev/netrom-stl/build/osx-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -I/Users/pijon/Documents/dev/netrom-stl/include -isystem /opt/homebrew/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -o CMakeFiles/my_executable.dir/src/Doctor.cpp.o -c /Users/pijon/Documents/dev/netrom-stl/src/Doctor.cpp",
+  "file": "/Users/pijon/Documents/dev/netrom-stl/src/Doctor.cpp",
+  "output": "CMakeFiles/my_executable.dir/src/Doctor.cpp.o"
+},
+{
+  "directory": "/Users/pijon/Documents/dev/netrom-stl/build/osx-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -I/Users/pijon/Documents/dev/netrom-stl/include -isystem /opt/homebrew/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -o CMakeFiles/my_executable.dir/src/Pacient.cpp.o -c /Users/pijon/Documents/dev/netrom-stl/src/Pacient.cpp",
+  "file": "/Users/pijon/Documents/dev/netrom-stl/src/Pacient.cpp",
+  "output": "CMakeFiles/my_executable.dir/src/Pacient.cpp.o"
+},
+{
+  "directory": "/Users/pijon/Documents/dev/netrom-stl/build/osx-debug",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -I/Users/pijon/Documents/dev/netrom-stl/include -isystem /opt/homebrew/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -o CMakeFiles/my_executable.dir/src/Stl.cpp.o -c /Users/pijon/Documents/dev/netrom-stl/src/Stl.cpp",
+  "file": "/Users/pijon/Documents/dev/netrom-stl/src/Stl.cpp",
+  "output": "CMakeFiles/my_executable.dir/src/Stl.cpp.o"
 }
 ]
