@@ -9,15 +9,18 @@
 #include <vector>
 
 namespace po = boost::program_options;
+using namespace std::literals::string_literals;
 
 int main(int argc, const char *argv[]) {
-  const std::string k_input = "input_file";
-  const std::string k_output = "output_file";
+  const std::string k_input = "input";
+  const std::string k_output = "output";
 
   try {
     po::options_description desc{"Options"};
     desc.add_options()("help,h", "Help screen")(
-        k_output + ",o", po::value<std::string>(), "Output file");
+        (k_output + ",o"s).c_str(), po::value<std::string>(),
+        "Output file")((k_input + ",i"s).c_str(),
+                       po::value<std::vector<std::string>>(), "Input file");
 
     po::positional_options_description pos_desc;
     pos_desc.add(k_input.c_str(), -1);
@@ -42,6 +45,7 @@ int main(int argc, const char *argv[]) {
     std::ofstream out(vm.count(k_output) ? vm[k_output].as<std::string>() : "");
 
     Stl::task(in.is_open() ? in : std::cin, out.is_open() ? out : std::cout);
+
   } catch (const po::error &ex) {
     std::cerr << ex.what() << '\n';
     return 1;
