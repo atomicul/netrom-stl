@@ -27,7 +27,8 @@ public:
   BaseEmergency &setDuration(int duratior) override;
   BaseEmergency &setSpecialty(std::string_view specialty) override;
   BaseEmergency &setPriority(int priority) override;
-  bool operator<(const emergencies::IEmergency &other) const = 0;
+
+  bool operator<(emergencies::IEmergency const &other) const override;
   virtual ~BaseEmergency() = default;
 };
 

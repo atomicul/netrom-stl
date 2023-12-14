@@ -1,4 +1,5 @@
 #include "emergencies/BaseEmergency.hpp"
+#include "emergencies/IEmergency.hpp"
 
 using namespace emergencies;
 
@@ -35,4 +36,10 @@ BaseEmergency &BaseEmergency::setSpecialty(std::string_view specialty) {
 BaseEmergency &BaseEmergency::setPriority(int priority) {
   _priority = priority;
   return *this;
+}
+
+bool BaseEmergency::operator<(IEmergency const &other) const {
+  if (this->arrivalHour() != other.arrivalHour())
+    return this->arrivalHour() < other.arrivalHour();
+  return this->priority() < other.priority();
 }
